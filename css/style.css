@@ -332,12 +332,10 @@ strong{
 
 .toggle{
   visibility: visible;
-  transform: translateY(-20px);
 }
 
 .collapse__text p{
   visibility: hidden;
-  transform: translateY(-20px);
 }
 
 .collapse__text:hover p {
