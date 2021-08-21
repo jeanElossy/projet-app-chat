@@ -319,11 +319,25 @@ strong{
 
 .collapse{
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: -8px;
   transition: 0.3s ease-in-out;
   padding: 15px;
-  opacity: 0;
+  visibility: hidden;
+  transition: .2s ease-in-out;
+}
+
+.toggle{
+  transform: translateY(-30px);
+  visibility: visible;
+}
+
+.collapse__text p{
+  visibility: hidden;
+}
+
+.collapse__text:hover p {
+  visibility: visible;
 }
 
 .collapse__icons{
@@ -332,6 +346,7 @@ strong{
   margin: 7px;
   border-radius: 50%;
 }
+
 
 .collapse__icons i{
   font-size: 1.3rem;
