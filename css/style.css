@@ -310,6 +310,10 @@ strong{
   color: #c5c5c5a1;
 }
 
+.sharing__icons:hover{
+  background: rgba(39, 38, 38, 0.644);
+  color: rgb(243, 235, 235);
+}
 .icon__send{
   margin-right: 20px;
   color: #c5c5c5;
@@ -319,21 +323,21 @@ strong{
 
 .collapse{
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: -8px;
-  transition: 0.3s ease-in-out;
   padding: 15px;
   visibility: hidden;
-  transition: .2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .toggle{
-  transform: translateY(-30px);
   visibility: visible;
+  transform: translateY(-20px);
 }
 
 .collapse__text p{
   visibility: hidden;
+  transform: translateY(-20px);
 }
 
 .collapse__text:hover p {
@@ -346,7 +350,6 @@ strong{
   margin: 7px;
   border-radius: 50%;
 }
-
 
 .collapse__icons i{
   font-size: 1.3rem;
@@ -379,3 +382,4 @@ strong{
 .icon--image{
   background: #9047b3;
 }
+
