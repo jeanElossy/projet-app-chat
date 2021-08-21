@@ -63,7 +63,7 @@
             </div>
             <div class="user__text">
               <strong>Martial</strong><br />
-              <span>I will not be absent</span>
+              <span>I will be absent</span>
             </div>
           </div>
           <div class="user__btn"></div>
@@ -168,8 +168,8 @@
           </div>
         </div>
         
-        <!-- <div class="send">
-          <table>
+        <!-- <div id="message">
+          <table border="0" align="center"width="100%">
             <tr class="message">
               <td>
                 <p>Hi I can't connect to the platform, I need help.</p>
@@ -190,14 +190,16 @@
       </div> -->
 
         <div id="message">
-          <div class="message">
-            <p>Hi I can't connect to the platform, I need help.</p>
+          <div class="message__received">
+            <div class="message">
+              <p>Hi I can't connect to the platform, I need help.</p>
+            </div>
+            <div class="message msg--received">
+              <p>Okay!!!</p>
+            </div>
           </div>
           <div class="message msg--send">
             <p>Hi, you have to clear your cache.</p>
-          </div>
-          <div class="message msg--received">
-            <p>Okay!!!</p>
           </div>
         </div>
       </div>
@@ -239,6 +241,7 @@
           </div>
           <form action="/">
             <input type="text" name="msg" id="msg" placeholder="Entrez votre message">
+            <!-- <textarea name="text" id="text"></textarea> -->
           </form>
         </div>
         <div class="icon__send">

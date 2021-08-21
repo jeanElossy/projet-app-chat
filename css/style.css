@@ -24,12 +24,15 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-.contact--text span i, body, .content__contact, .contact--text, .container, .conversation span i, .seach, .user__picture span, .icon, .icon div:nth-child(1), .icon div:nth-child(2), .write__msg span, .icon__input, .write__msg, .sharing__icons, .collapse__icons, .collapse__text, .info__user{
+.contact--text span i, body, .content__contact, .contact--text, .container, .conversation span i, .seach, .user__picture span, .icon, .icon div:nth-child(1), .icon div:nth-child(2), .write__msg span, .icon__input, .write__msg, .sharing__icons, .collapse__icons, .collapse__text, .info__user, #message{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#message, .message__received{
+  justify-content: space-between;
+}
 .content__contact, .user, .user__picture, .user__text, .write__msg span, .icon__send, .sharing__icons, .icon--user, .icon--file, .icon--camera, .icon--image{
   cursor: pointer;
 }
@@ -246,16 +249,17 @@ strong{
 }
 
 #message{
-  width: 100%;
-  border: 1px solid black;
-  /* display: grid;
-  grid-template-rows: repeat(3, 100px);
-  grid-template-columns: repeat(2, 800px); */
+  width: 96%;
+  margin-left: 20px;
+}
+
+.message__received{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .message{
-  width: 400px;
-  height: 50px;
   border-radius: 20px 20px 20px 0;
   background: var(--color--right);
   box-shadow:  2px 2px 2px #53535357, -2px -4px 5px #5e5d5dad;
@@ -265,20 +269,18 @@ strong{
 
 .msg--send{
   background: var(--color--send-text);
-  width: 200px;
   padding: 10px;
   border-radius: 20px 20px 0 20px;
 }
 
 .msg--received{
   width: 100px;
-}
+} 
 
 .write__msg{
-  width: 95%;
-  height: 50px;
-  margin-bottom: 20px;
-  margin-left: 30px;
+  width: 97%;
+  margin-bottom: 10px;
+  margin-left: 15px;
   border-radius: 36px;
   background: var(--color--right);
   box-shadow:  1px 1px 3px #1b1b1b, -4px -4px 8px #646161; 
@@ -288,12 +290,15 @@ strong{
   justify-content: space-between;
 }
 
-.write__msg input{
+.write__msg input {
   width: 780px;
   padding: 15px;
   background: transparent;
   border: none;
   color: var(--color--text);
+  /* border: 1px solid #08c5f5;
+  resize: none;
+  overflow-y: hidden; */
 }
 
 .sharing__icons{
@@ -314,8 +319,8 @@ strong{
 
 .collapse{
   position: absolute;
-  bottom: 70px;
-  left: 10px;
+  bottom: 50px;
+  left: -8px;
   transition: 0.3s ease-in-out;
   padding: 15px;
   opacity: 0;
